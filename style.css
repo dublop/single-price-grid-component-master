@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700&display=swap');
+::root{
+    /*Colors*/
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --blue-gray: hsl(218, 22%, 67%);
+    /*Font size*/
+    --sm: 12px;
+    --md: 16px;
+    --lg: 24px;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hwb(220 89% 4%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    justify-content: center;
+}
+
+header {
+    background-color: white;
+    padding: 30px 24px;
+}
+
+.title {
+    font-size: 18px;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+header :nth-child(2) {
+    font-size: 16px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+header :nth-child(3) {
+    font-size: 14px;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcription {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 24px;
+}
+
+.sub-title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.subcription span{
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.subcription p:nth-child(2){
+    align-self: center;
+    font-weight: 300;
+}
+
+.subcription button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 10px;
+}
+
+.why-us {
+    background-color: hsla(179, 62%, 43%, 0.803);
+    color: hsl(204, 43%, 93%);
+    padding: 24px;
+}
+
+.why-us ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 375px){
+    .container {
+        width: 310px;
+        height: 725px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container {
+        width: 620px;
+        height: 465px;
+    }
+    
+    .price-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subcription{
+        padding: 35px 40px;
+        width: 50%;
+    }
+
+    .why-us {
+        padding: 35px 40px;
+        width: 50%;
+    }
+}
