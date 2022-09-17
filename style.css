@@ -82,6 +82,8 @@ header :nth-child(3) {
     margin-top: 20px;
     width: 100%;
     padding: 10px 0;
+    font-weight: 700;
+    color: white;
     background-color: hsl(71, 73%, 54%);
     border: none;
     border-radius: 10px;
